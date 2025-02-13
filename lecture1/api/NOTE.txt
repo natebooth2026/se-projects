@@ -1,0 +1,2 @@
+Must install and run flask first!
+Check out python requests library!
