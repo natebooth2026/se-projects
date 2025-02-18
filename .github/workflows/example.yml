@@ -18,5 +18,7 @@ jobs:
             pip install pytest
       - name: Check Parser
         run: |
-            echo pytest lecture1/parser.py
-            pytest lecture1/parser.py
+            echo cd lecture1
+            cd lecture1
+            echo pytest parser.py
+            pytest parser.py
