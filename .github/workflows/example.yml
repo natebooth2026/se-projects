@@ -1,0 +1,17 @@
+name: Example Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  unit_testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get files
+        uses: actions/checkout@v2 #actions is the github actions library
+      - name: Say hello 
+        run: |
+            echo "Hello"
+            echo "How are you today?"
+            ls -la
+            pwd
