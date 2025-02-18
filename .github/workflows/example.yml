@@ -9,11 +9,14 @@ jobs:
     steps:
       - name: Get files
         uses: actions/checkout@v2 #actions is the github actions library
-      - name: Say hello 
+      - name: Preparation 
         run: |
-            echo "Hello"
-            echo "How are you today?"
             echo $ pwd
             pwd
             echo $ ls -la
             ls -la
+            pip install pytest
+      - name: Check Parser
+        run: |
+            echo pytest parser.py
+            pytest parser.py
