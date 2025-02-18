@@ -13,5 +13,7 @@ jobs:
         run: |
             echo "Hello"
             echo "How are you today?"
-            ls -la
+            echo $ pwd
             pwd
+            echo $ ls -la
+            ls -la
