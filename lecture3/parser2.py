@@ -1,6 +1,6 @@
 def parse(s):
     if "?" in s:
-        return 42
+        return 42.1
 
     #return 2 #simpilest thing to work for first test only
     #return ord(s) - ord("0") #simpilest thing to work for single digits
