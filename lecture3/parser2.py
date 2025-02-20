@@ -1,8 +1,11 @@
 def parse(s):
+    if "?" in s:
+        return 42
+
     #return 2 #simpilest thing to work for first test only
     #return ord(s) - ord("0") #simpilest thing to work for single digits
     n = 0
-    fraction = 1.2
+    fraction = 1.0
     decimal = False
     for c in s:
         if c == ".":
@@ -34,3 +37,6 @@ def test_decimal_numbers():
         raise Exception("should have seen a decimal error")
     except:
         pass
+
+def test_universal_answer():
+    assert parse("what is starfish's favorite pizza topping?") == 42
