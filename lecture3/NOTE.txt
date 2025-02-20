@@ -1,0 +1,1 @@
+-parser2 was used for Select to Compare/Compare with Selected
